@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ezekiel — Backend Developer Portfolio">
+  <title>Ezekiel | Backend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow"></div>
+
+  <header class="navbar">
+    <a href="#home" class="logo">Ezekiel<span>.</span></a>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" aria-label="Open menu"><span></span><span></span></button>
+  </header>
+
+  <div class="scroll-progress"></div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+
+      <div class="hero-content">
+        <div class="status"><span></span> Available for opportunities</div>
+
+        <div class="photo-wrap">
+          <div class="photo-ring"></div>
+          <label class="photo">
+            <input type="file" id="photoInput" accept="image/*">
+            <img id="profileImage" src="assets/profile.jpg" alt="Ezekiel profile photo">
+            <div class="photo-placeholder">
+              <div class="upload-icon">↑</div>
+              <strong>Add your photo</strong>
+              <small>Click to upload</small>
+            </div>
+          </label>
+          <div class="orbit-dot dot-a"></div>
+          <div class="orbit-dot dot-b"></div>
+        </div>
+
+        <p class="eyebrow">BACKEND DEVELOPER / PHP / MYSQL</p>
+        <h1>I build systems<br>that <em>work.</em></h1>
+        <p class="hero-text">Clean logic. Practical interfaces. Reliable web applications built with purpose.</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Explore my work <span>↗</span></a>
+          <a href="#contact" class="btn btn-ghost">Let's talk <span>→</span></a>
+        </div>
+
+        <div class="hero-meta">
+          <span><b>01</b> Based in Nigeria</span>
+          <span><b>02</b> Computer Science</span>
+          <span><b>03</b> Always learning</span>
+        </div>
+      </div>
+
+      <div class="scroll-hint"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-label">01 / ABOUT</div>
+      <div class="about-grid">
+        <div>
+          <h2>More than<br><span>just code.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p class="lead">I'm Ezekiel, a Computer Science graduate focused on backend development and building useful web applications.</p>
+          <p>I enjoy taking a messy problem, breaking it down into smaller pieces, and turning those pieces into something that actually works. My current focus is PHP, MySQL and the fundamentals that make web applications reliable.</p>
+          <div class="facts">
+            <div><strong>01</strong><span>Problem solving</span></div>
+            <div><strong>02</strong><span>Backend systems</span></div>
+            <div><strong>03</strong><span>Continuous learning</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="section-label">02 / STACK</div>
+      <div class="skills-head">
+        <h2>The tools<br><span>I work with.</span></h2>
+        <p>Not a list of every technology I've touched — just the tools I'm actively building with and learning.</p>
+      </div>
+
+      <div class="skill-grid">
+        <div class="skill-card featured">
+          <span class="skill-number">01</span>
+          <div class="skill-icon">&lt;/&gt;</div>
+          <h3>PHP</h3>
+          <p>Server-side logic, forms, authentication and web application fundamentals.</p>
+          <div class="meter"><span style="width:72%"></span></div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-number">02</span>
+          <div class="skill-icon">DB</div>
+          <h3>MySQL</h3>
+          <p>Relational databases, queries, tables and application data.</p>
+          <div class="meter"><span style="width:68%"></span></div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-number">03</span>
+          <div class="skill-icon">#</div>
+          <h3>HTML / CSS</h3>
+          <p>Responsive layouts, clean structure and modern visual interfaces.</p>
+          <div class="meter"><span style="width:76%"></span></div>
+        </div>
+        <div class="skill-card">
+          <span class="skill-number">04</span>
+          <div class="skill-icon">JS</div>
+          <h3>JavaScript</h3>
+          <p>Interactive interfaces and client-side functionality.</p>
+          <div class="meter"><span style="width:55%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="section-label">03 / SELECTED WORK</div>
+      <div class="projects-head">
+        <h2>Things I've<br><span>built.</span></h2>
+        <span class="project-count">03 PROJECTS</span>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card">
+          <div class="project-image inventory">
+            <span>01</span>
+            <div class="mock-ui">
+              <div></div><div></div><div></div><div></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-top"><span>PHP / MYSQL</span><span>2024</span></div>
+            <h3>Supermarket Inventory System</h3>
+            <p>A web application designed to improve stock control, reduce losses and make inventory management more efficient.</p>
+            <a href="#" class="project-link">View case study <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card reverse">
+          <div class="project-image portfolio-art">
+            <span>02</span>
+            <div class="code-lines">
+              <i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-top"><span>HTML / CSS / JS</span><span>2026</span></div>
+            <h3>Personal Portfolio</h3>
+            <p>A responsive developer portfolio focused on strong typography, motion, clean structure and a distinctive visual identity.</p>
+            <a href="#" class="project-link">View project <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image task-art">
+            <span>03</span>
+            <div class="task-window">
+              <b>Today's tasks</b>
+              <i>✓ Build API</i><i>✓ Test database</i><i>○ Deploy project</i>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-top"><span>PHP / MYSQL</span><span>2026</span></div>
+            <h3>Task Manager</h3>
+            <p>A simple task management concept for organizing daily work, tracking progress and practicing CRUD operations.</p>
+            <a href="#" class="project-link">View project <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="process section">
+      <div class="section-label">04 / PROCESS</div>
+      <div class="process-grid">
+        <div><h2>How I<br><span>work.</span></h2></div>
+        <div class="timeline">
+          <div class="step"><span>01</span><div><h3>Understand</h3><p>Figure out what the problem actually is before writing code.</p></div></div>
+          <div class="step"><span>02</span><div><h3>Build</h3><p>Break the system down and build the important parts first.</p></div></div>
+          <div class="step"><span>03</span><div><h3>Test</h3><p>Find what breaks, fix it, then simplify what doesn't need to be complicated.</p></div></div>
+          <div class="step"><span>04</span><div><h3>Improve</h3><p>Keep learning and make the next version better than the last.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-box">
+        <div class="section-label">05 / CONTACT</div>
+        <h2>Have an idea?<br><span>Let's build it.</span></h2>
+        <p>I'm open to opportunities, collaborations and interesting projects.</p>
+        <a class="email-link" href="mailto:your@email.com">your@email.com <span>↗</span></a>
+        <div class="socials">
+          <a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#">X</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Ezekiel.</span><span>Built with HTML, CSS & JavaScript.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
